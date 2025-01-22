@@ -66,7 +66,7 @@ The pojects contains 9 parts.
 - We add 4 additional layers, 2 Classification layers and 2 Regression layers
   - Classification layers uses relu and sigmoid function, output expected to be 1 since it can either be face or no face
   - Regression layers uses relu and sigmoid function, output expected to be 4 represented 2 points each have x and y to build a rectangle
-- The optimizer is Adam with addition learning rate decay formula as: $$\frac{\left(\frac{1}{0.75} - 1\right)}{batches\_per\_epoch}$$
+- The optimizer is Adam with addition learning rate decay formula as: $$\frac{\left(\frac{1}{0.75} - 1\right)}{batches_per_epoch}$$
 
 - The loss function are different for 2 classification and regression layers:
   - For Regression, we are taking the squared differences between true and predicted width and height, where width is the difference of 2 x values and height is the difference of 2 y values.
